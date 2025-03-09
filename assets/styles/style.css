@@ -1,0 +1,1906 @@
+* {
+  font-family: Manrope, sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  touch-action: manipulation;
+  overflow: hidden;
+  overflow-y: auto;
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* background: yellow; */
+  /* display: grid;
+  place-items: center; */
+  /* display: flex;
+  align-items: flex-start;
+  flex-direction: column; */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 4rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header .logo {
+  font-weight: 700;
+  font-size: 32px;
+  color: #3d00b7;
+}
+
+header nav a {
+  margin-right: 45px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+
+header .search-box {
+  width: 298px;
+  height: 50px;
+  border-radius: 100px;
+  border: solid 2px #c1c1c1;
+  outline: none;
+  /* padding: 0 29.5px; */
+  color: #c0c0c0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header input {
+  height: 30px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  color: #c0c0c0;
+  padding-left: 5px;
+}
+
+header input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.86px;
+  letter-spacing: 4%;
+  color: #c0c0c0;
+}
+
+header .wallet {
+  background: none;
+  border: 2px solid #3d00b7;
+  font-weight: 700;
+  font-size: 14px;
+  width: 155.35269165039062px;
+  height: 50px;
+  border-radius: 40px;
+  color: #3d00b7;
+  cursor: pointer;
+}
+
+header .connect {
+  gap: 30px;
+}
+header #hamburgerbar {
+  font-size: 40px;
+  color: #4d4d4d;
+  cursor: pointer;
+  display: none;
+}
+
+:root {
+  --btn-color-primary: #3d00b7;
+  --btn-color-secondary: #f5f5f5;
+
+  ---text-color-primary: #000000;
+  ---text-color-secondary: #3d00b7;
+  ---text-color-tertiary: #2339ed;
+  ---text-color-tertiary: #ffffff;
+  ---text-color-green: #00ac4f;
+  ---text-color-light-gray: #000000;
+  ---text-color-dark-gray: #000000;
+  ---text-color-light: #757575;
+
+  /* FONT SIZES */
+
+  ---font-size-x-small: 12px;
+  ---font-size-small: 14px;
+  ---font-size-normal: 16px;
+  ---font-size-medium: 18px;
+  ---font-size-large: 20px;
+  ---font-size-semi-large: 32px;
+  ---font-size-x-large: 40px;
+
+  /* FONT WEIGHT */
+
+  ---font-weight-light: 200;
+  ---font-weight-normal: 300;
+  ---font-weight-regular: 400;
+  ---font-weight-medium: 500;
+  ---font-weight-semi-bold: 600;
+  ---font-weight-bold: 700;
+  ---font-weight-extra-bold: 800;
+
+  /* BORDER COLOR */
+  --border-color-green: #00ac4f;
+  --border-color-blue: #3d00b7;
+  --border-color-gray: #f2f2f2;
+  --border-color-light-gray: #c1c1c1;
+}
+
+.stats {
+  display: flex;
+  gap: 45px;
+}
+
+.stats .stats-cont {
+  width: 97px;
+  height: 75px;
+}
+
+.stats h3 {
+  font-weight: 400;
+  font-size: 40px;
+  color: #000;
+}
+
+.stats span {
+  font-weight: 400;
+  font-size: 20px;
+  color: #565656;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 130px 4rem;
+  height: auto;
+}
+
+#hero .text h1 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54.64px;
+  letter-spacing: 5%;
+  width: 612px;
+  border-width: 1px;
+  margin-bottom: 8px;
+}
+
+#hero .text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  width: 532px;
+  height: 96px;
+  margin-bottom: 40px;
+  color: #565656;
+}
+
+#hero .text button {
+  width: 207px;
+  height: 67px;
+  border-radius: 60px;
+  background-color: #3d00b7;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27.32px;
+  letter-spacing: 6.5%;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+#hero .img {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 467px;
+  height: 440px;
+}
+#hero .img .wrapped {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 467px;
+  height: 440px;
+}
+
+#hero .img .box1 {
+  z-index: 3;
+  position: absolute;
+}
+
+#hero .img .box2 {
+  margin-left: 80px;
+  position: absolute;
+  z-index: 2;
+}
+
+#hero .img .box3 {
+  margin-left: 157px;
+  position: absolute;
+}
+
+/* #hero .img .box {
+    position: absolute;
+    width: 467px;
+    height: 440px;
+    right: 0;
+} */
+
+#hero .img .image-card {
+  /* width: 467px; */
+  /* height: 440px; */
+  /* background: #000; */
+  position: relative;
+}
+
+#hero .img .image-card .title {
+  left: 28px;
+  top: 26.67px;
+  position: absolute;
+}
+
+#hero .img .image-card .title h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38.25px;
+  letter-spacing: -5%;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+#hero .img .image-card .title .pfp {
+  display: flex;
+  align-items: center;
+}
+
+#hero .img .image-card .title .pfp p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27.32px;
+  margin-left: 14.4px;
+  color: #fff;
+}
+
+#hero .img .image-card .countdown {
+  bottom: 0;
+  position: absolute;
+  width: 348px;
+  height: 73.85px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(50px);
+  border-radius: 12px;
+  margin: 26px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#hero .img .image-card .countdown .current {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 298px;
+  margin-top: 14.36px;
+}
+
+#hero .img .image-card .countdown .current p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16.39px;
+  color: #ffffff;
+}
+
+#hero .img .image-card .countdown .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 298px;
+  margin-top: 7.18px;
+}
+
+#hero .img .image-card .countdown .price .eth {
+  display: flex;
+  align-items: center;
+}
+
+#hero .img .image-card .countdown .price .eth img {
+  margin-right: 10px;
+}
+
+#hero .img .image-card .countdown .price .eth span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.86px;
+  color: #fff;
+}
+
+#hero .img .image-card .countdown .price .eth p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.86px;
+  color: #fff;
+}
+
+#hero .img .image-card .countdown .time p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.86px;
+  color: #fff;
+}
+
+#hero .img .image-card .countdown .time span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.86px;
+  color: #fff;
+}
+
+#features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 4rem;
+  backdrop-filter: blur(50px);
+  background: #d9e0ec33;
+  width: 100%;
+}
+
+#features .content p {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+#features .content2 .div1,
+.div2 {
+  display: flex;
+  align-items: flex-start;
+}
+
+#features .content2 .div1,
+.div2 {
+  margin-left: 70px;
+}
+
+#features .content2 .div1 h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#features .content2 .div2 h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#features .content2 .div2 .content p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #696969;
+  width: 268px;
+}
+
+#features .content2 .div1 .content p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #696969;
+  width: 268px;
+}
+
+#features .content2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#features .content2 img {
+  width: 36px;
+  margin-right: 16px;
+}
+
+#collection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: stretch;
+  padding: 100px 4rem;
+  width: 100%;
+  height: auto;
+  /* flex-flow: wrap;
+    gap: 40px; */
+}
+
+#collection .seg1 .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+#collection .seg1 .name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#collection .seg1 .name img {
+  margin-right: 10px;
+}
+
+#collection .seg1 .name .content h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#collection .seg1 .name .content span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #363639;
+}
+
+#collection .seg1 .profile .price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* width: 91px; */
+}
+
+#collection .seg1 .profile .price p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #3a3a3a;
+  line-height: 16.39px;
+  margin-bottom: 7px;
+}
+
+#collection .seg1 .profile .eth {
+  display: flex;
+  align-items: center;
+}
+
+#collection .seg1 .profile .eth span {
+  font-weight: 700;
+  font-size: 16px;
+  color: #3a3a3a;
+}
+
+#collection .seg1 .profile .eth p {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#collection .seg1 .profile .eth-logo img {
+  margin-right: 10px;
+}
+
+#collection .seg2 .bid {
+  display: flex;
+  margin-bottom: 40px;
+  border-right: 1px solid #ececec;
+  padding-right: 30px;
+}
+
+#collection .seg2 .bid .charts {
+  display: flex;
+  align-items: center;
+}
+
+#collection .seg2 .bid .stack span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.12px;
+  letter-spacing: 0%;
+  color: #757575;
+}
+
+#collection .seg2 .bid .stack h5 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.12px;
+  letter-spacing: 0%;
+  color: #757575;
+}
+
+#collection .seg2 .bid .content {
+  margin-left: 20px;
+}
+
+#collection .seg2 .bid .content h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27.32px;
+  letter-spacing: 0%;
+  margin-bottom: 7px;
+}
+
+#collection .seg2 .bid .content .price-card {
+  width: 81.5px;
+  height: 32px;
+  margin-right: 9.5px;
+  border: 1px solid #00ac4f;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#collection .seg2 .bid .content img {
+  margin-right: 5px;
+}
+
+#collection .seg2 .bid .content .price-card p,
+span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16.39px;
+  letter-spacing: 0%;
+  color: #00ac4f;
+}
+
+#collection .seg2 .bid .placebid {
+  width: 109px;
+  height: 47px;
+  border-radius: 50px;
+  border: none;
+  background: #3d00b7;
+  color: #fff;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+#collection .seg2 .bid .white {
+  width: 109px;
+  height: 47px;
+  border-radius: 50px;
+  border: 2px solid #3d00b7;
+  color: #3d00b7;
+  background: #fff;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+#collection .seg3 .nft-tracker h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27.32px;
+}
+
+#collection .seg3 .nft-tracker span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.59px;
+  color: #3d00b7;
+}
+
+#collection .seg3 .box {
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#collection .seg3 .box .box3 .value {
+  display: flex;
+  align-items: center;
+}
+
+#collection .seg3 .box .box1 p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24.72px;
+  letter-spacing: -2.5%;
+  text-align: center;
+}
+
+#collection .seg3 .box .box2 {
+  margin-left: 21px;
+  position: relative;
+  width: 60px;
+}
+
+#collection .seg3 .box .verify {
+  margin-left: 21px;
+  position: relative;
+  width: 60px;
+}
+
+#collection .seg3 .box .box2 .verified {
+  position: absolute;
+  top: -7.5px;
+  right: -7.5px;
+}
+
+#collection .seg3 .box .box3 h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16.48px;
+  letter-spacing: -2.5%;
+  margin-bottom: 10px;
+}
+
+#collection .seg3 .box .box3 .value img {
+  margin-right: 6px;
+}
+
+#collection .seg3 .box .box3 .value p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14.42px;
+  letter-spacing: -2.5%;
+  color: #636363;
+}
+
+#collection .seg3 .box .box3 {
+  margin-left: 17px;
+}
+
+#collection .seg3 .box .box4 {
+  margin-left: 27px;
+}
+
+#collection .seg3 .box .box4 p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20.6px;
+  letter-spacing: -2.5%;
+  text-align: right;
+  color: #14c8b0;
+}
+
+#collection .seg3 .box .red p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20.6px;
+  letter-spacing: -2.5%;
+  text-align: right;
+  color: #ff002e;
+}
+
+#featured {
+  width: 100%;
+  height: auto;
+  padding: 96px 4rem;
+  background: #d9e0ec33;
+}
+
+#featured .card1 {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+#featured .card1 h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27.32px;
+  margin-top: 20px;
+}
+
+#featured .banner h3 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38.25px;
+}
+
+#featured .placard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#featured .card3 {
+  width: 379px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#featured .card3 .profile {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#featured .card3 .profile img {
+  width: 28px;
+}
+
+#featured .card3 .profile span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.12px;
+  color: #000000;
+}
+
+#featured .card3 .total {
+  width: 98px;
+  height: 29px;
+  border-radius: 60px;
+  border: 1px solid #2639ed;
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15.03px;
+  cursor: pointer;
+  color: #2639ed;
+  background: #d9e0ec33;
+}
+
+#nft-trade {
+  width: 100%;
+  height: auto;
+  padding: 140px 4rem;
+  /* background: #D9E0EC33; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nft-trade .img-box .pfp img {
+  width: 64px;
+}
+
+#nft-trade .img-box {
+  position: relative;
+  /* height: 448px; */
+  /* width: 64px; */
+}
+
+#nft-trade .img-box .pfp {
+  display: flex;
+  position: absolute;
+  /* background: #000; */
+  bottom: 2px;
+  right: -40px;
+  width: 108px;
+  /* margin-bottom: 25px; */
+}
+
+#nft-trade .img-box .pfp .p1 {
+  margin-left: 50px;
+  /* background: #00AC4F; */
+  position: absolute;
+}
+
+/* #nft-trade .img-box .pfp .p2 {
+    margin-right: 100px;
+    position: absolute;
+    z-index: 1;
+} */
+
+#nft-trade .content h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 54.64px;
+  width: 320px;
+  margin-bottom: 16px;
+}
+
+#nft-trade .content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.8px;
+  color: #636363;
+  width: 517px;
+  margin-bottom: 52px;
+}
+
+#nft-trade .content .sign-up {
+  width: 209px;
+  height: 67px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27.32px;
+  letter-spacing: 6.5%;
+  color: #fff;
+  background: #3d00b7;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+#discover {
+  padding: 47px 4rem;
+  background: #d9e0ec33;
+  backdrop-filter: blur(50px);
+  display: flex;
+  flex-direction: column;
+}
+
+#discover .discover__h2 {
+  margin-bottom: 63px;
+}
+
+#discover .discover__h2 h2 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 46.44px;
+  margin-bottom: 48px;
+}
+
+#discover .mini__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+#discover .mini__navbar a {
+  color: #000;
+  width: 100%;
+  font-size: 14px;
+}
+
+#discover .mini__navbar .discover-btns .active {
+  color: #fff;
+  background: #3d00b7;
+  width: 132px;
+  /* height: 38px; */
+}
+
+#discover .mini__navbar .discover-btns .active a {
+  color: #fff;
+  padding: 0 20px;
+}
+#discover .mini__navbar .discover-btns {
+  display: flex;
+}
+
+#discover .mini__navbar .discover-btns button {
+  height: 38px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #dcdcdc33;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  margin-right: 12px;
+}
+#discover .mini__navbar .discover-btns .art {
+  width: 61px;
+}
+#discover .mini__navbar .discover-btns .celebrities {
+  width: 113px;
+}
+#discover .mini__navbar .discover-btns .gaming {
+  width: 91px;
+}
+#discover .mini__navbar .discover-btns .music {
+  width: 77px;
+}
+#discover .mini__navbar .discover-btns .sport {
+  width: 80px;
+}
+#discover .mini__navbar .discover-btns .crypto {
+  width: 85px;
+}
+
+#discover .mini__navbar .hamburger {
+  display: flex;
+  align-items: center;
+}
+
+#discover .mini__navbar .hamburger img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#discover .mini__navbar .hamburger span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.45px;
+  color: #371c87;
+}
+
+#discover .market {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+#discover .market .item-box {
+  width: 269.88px;
+  height: 379px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  border-radius: 13.16px;
+  padding: 0 10px;
+}
+
+#discover .market .item-box .image-card {
+  position: relative;
+  width: 247.94px;
+  /* background: #000; */
+}
+
+#discover .market .item-box .pfp {
+  margin-bottom: 11px;
+}
+
+#discover .market .item-box .pfp img {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+#discover .market .item-box .pfp .pfp1 {
+  margin-left: 12.07px;
+}
+
+#discover .market .item-box .pfp .pfp2 {
+  margin-left: 35.11px;
+}
+
+#discover .market .item-box .pfp .pfp3 {
+  margin-left: 58.14px;
+}
+
+#discover .market .item-box .pfp .pfp4 {
+  margin-left: 81.18px;
+}
+
+#discover .market .item-box h4 {
+  font-weight: 700;
+  font-size: 19.75px;
+  line-height: 19.15px;
+  margin-left: 12.07px;
+}
+
+#discover .market .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 223px;
+  margin-left: 12.07px;
+  margin-top: 10.72px;
+  margin-bottom: 31px;
+}
+
+#discover .market .price .eth {
+  display: flex;
+  align-items: center;
+}
+
+#discover .market .price .eth {
+  display: flex;
+  align-items: center;
+}
+
+#discover .market .price .eth img {
+  margin-right: 5.5px;
+  width: 9.36px;
+}
+
+#discover .market .price .eth span {
+  font-weight: 700;
+  font-size: 10.97px;
+  /* line-height: 14.99px; */
+  color: #00ac4f;
+}
+
+#discover .market .price .eth p {
+  font-weight: 700;
+  font-size: 10.97px;
+  /* line-height: 14.99px; */
+  color: #00ac4f;
+}
+
+#discover .market .price .collection p {
+  font-weight: 500;
+  font-size: 13.16px;
+  line-height: 19.15px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #838383;
+}
+
+#discover .market .price .collection span {
+  font-weight: 500;
+  font-size: 13.16px;
+  line-height: 19.15px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #838383;
+}
+
+#discover .market .item-box .line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#discover .market .item-box .time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 223px;
+  margin-left: 12.07px;
+  margin-top: 10.84px;
+}
+
+#discover .market .item-box .time .stopwatch {
+  width: 95px;
+  height: 29px;
+  border-radius: 109.71px;
+  background: #f5f5f5;
+  display: grid;
+  place-items: center;
+}
+
+#discover .market .item-box .time .stopwatch span {
+  /* font-family: Manrope; */
+  font-weight: 700;
+  font-size: 10.97px;
+  line-height: 19.15px;
+  color: #5539a8;
+}
+
+#discover .market .item-box .time .stopwatch p {
+  /* font-family: Manrope; */
+  font-weight: 400;
+  font-size: 10.97px;
+  line-height: 19.15px;
+  color: #5539a8;
+}
+
+#discover .market .item-box .time .bidd {
+  background: none;
+  width: 77px;
+  height: 21px;
+  /* font-family: Manrope; */
+  font-weight: 500;
+  font-size: 15.36px;
+  /* line-height: 20.98px; */
+  color: #4f33a3;
+  border: none;
+  cursor: pointer;
+}
+
+#discover .morenfts {
+  display: grid;
+  place-items: center;
+  /* background: #000; */
+  width: 100%;
+  margin-top: 68px;
+}
+
+#discover .morenft {
+  display: grid;
+  place-items: center;
+  margin-top: 68px;
+  width: 178px;
+  height: 67px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27.32px;
+  border: 2px solid #3d00b7;
+  border-radius: 50px;
+  color: #4f33a3;
+}
+
+footer {
+  padding: 60px 4rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+footer .footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer .footer-container .box1 h5 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32.78px;
+  margin-bottom: 23px;
+}
+
+footer .footer-container .box1 p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.4px;
+  width: 333px;
+  margin-bottom: 32px;
+  color: #565656;
+}
+
+footer .footer-container .box1 .socials a {
+  margin-right: 16px;
+}
+
+footer .footer-container .wrap {
+  display: flex;
+  align-items: flex-start;
+}
+footer .footer-container .right {
+  display: flex;
+  align-items: flex-start;
+}
+
+footer .footer-container .wrap .box2 h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.59px;
+  margin-bottom: 22px;
+  width: 133px;
+}
+
+footer .footer-container .wrap .box3 {
+  margin-left: 94px;
+}
+
+footer .footer-container .wrap .box3 h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.59px;
+  margin-bottom: 22px;
+  width: 133px;
+}
+
+footer .footer-container .box4 {
+  margin-left: 94px;
+}
+
+footer .footer-container .box4 h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.59px;
+  margin-bottom: 22px;
+}
+
+footer .footer-container .box4 p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #3d3d3d;
+  width: 362px;
+}
+
+footer .footer-container .box4 .subscribe {
+  height: 60.79px;
+  width: 364px;
+  border-radius: 45.6px;
+  border: 2px solid #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+footer .footer-container .box4 .subscribe input {
+  height: 100%;
+  width: 144.38px;
+  margin-left: 25.84px;
+  font-weight: 400;
+  font-size: 12.16px;
+  line-height: 16.61px;
+  color: #959595;
+  outline: none;
+  border: none;
+}
+
+footer .footer-container .box4 .subscribe input::placeholder {
+  margin-left: 25.84px;
+  font-weight: 400;
+  font-size: 12.16px;
+  line-height: 16.61px;
+  color: #959595;
+  width: 144.38px;
+}
+footer .footer-container .box4 .subscribe input,
+textarea {
+  touch-action: manipulation;
+}
+
+footer .footer-container .box4 .subscribe .sub-btn {
+  width: 148.79px;
+  height: 47.4px;
+  background: #2639ed;
+  border: none;
+  border-radius: 45.59px;
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 12.16px;
+  line-height: 16.61px;
+  letter-spacing: 6.5%;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 22px;
+}
+footer .footer-container .wrap a {
+  font-weight: 500;
+  font-size: 14px;
+  /* line-height: 28px; */
+  color: #3d3d3d;
+  display: block;
+  margin-bottom: 14px;
+}
+@media screen and (max-width: 1300px) {
+  #featured {
+    padding: 30px 2rem;
+    align-items: flex-start;
+  }
+  #featured .banner {
+    display: grid;
+    place-items: center;
+  }
+  #featured .banner h3 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  #featured .placard {
+    flex-direction: column;
+    padding: 15px 0rem;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #collection .seg3 .nft-tracker {
+    display: grid;
+    place-items: center;
+    margin-bottom: 65px;
+  }
+  #collection {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 30px 2rem;
+    /* width: 100%; */
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  #features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 2rem;
+  }
+  #features .content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 70px 2rem;
+  }
+  #features .content2 .div1,
+  .div2 {
+    margin-left: 0px;
+  }
+  #features .content2 .div2 {
+    margin-top: 70px;
+  }
+  #nft-trade {
+    flex-direction: column-reverse;
+    padding: 30px 2rem;
+    align-items: center;
+  }
+  #nft-trade .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  #nft-trade .content h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+    border-bottom: 1px solid #cccccc;
+    padding: 15px 3rem;
+    position: fixed;
+  }
+
+  header .navbar {
+    display: none;
+  }
+
+  /* header .connect {
+    display: none;
+  } */
+
+  header #hamburgerbar {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px 3rem;
+  }
+
+  header .search-box {
+    display: none;
+  }
+  header .wallet {
+    display: none;
+  }
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 90px 2rem;
+  }
+  #hero .text {
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #hero .text h1 {
+    text-align: center;
+    width: 400px;
+  }
+  #hero .text p {
+    text-align: center;
+    width: 400px;
+  }
+  #hero .text .stats {
+    justify-content: center;
+  }
+  #hero .img {
+    align-items: center;
+    width: 100%;
+  }
+  #hero .img .wrapped {
+    align-items: center;
+    justify-content: center;
+  }
+  #hero .img .box2 {
+    margin-left: 0;
+  }
+  #hero .img .box3 {
+    margin-left: 0;
+  }
+  #features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 2rem;
+  }
+  #features .content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 70px 2rem;
+  }
+  #features .content2 .div1,
+  .div2 {
+    margin-left: 0px;
+  }
+  #features .content2 .div2 {
+    margin-top: 70px;
+  }
+  #collection .seg3 .nft-tracker {
+    display: grid;
+    place-items: center;
+    margin-bottom: 65px;
+  }
+  #collection {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 30px 2rem;
+    width: 100%;
+  }
+  #featured {
+    padding: 30px 2rem;
+    align-items: flex-start;
+  }
+  #featured .banner {
+    display: grid;
+    place-items: center;
+  }
+  #featured .banner h3 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  #featured .placard {
+    flex-direction: column;
+    padding: 15px 0rem;
+    align-items: center;
+  }
+  #nft-trade {
+    flex-direction: column-reverse;
+    padding: 30px 2rem;
+    align-items: center;
+  }
+  #nft-trade .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  #nft-trade .content h3 {
+    text-align: center;
+  }
+  #discover {
+    display: flex;
+    padding: 0 2rem;
+  }
+  #discover .market {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 750px;
+    overflow-x: scroll;
+    /* background-color: #00ac4f; */
+    gap: 10px;
+    padding-right: 40px;
+  }
+  /* #discover .mini__navbar .discover-btns {
+    overflow-x: scroll;
+    width: 375px;
+    background: red;
+    display: flex;
+  } */
+
+  footer {
+    padding: 30px 4rem;
+  }
+  footer .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 95px;
+  }
+  footer .footer-container .right {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+  footer .footer-container .box4 {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 540px) {
+  header {
+    padding: 15px 1rem;
+    /* display: none; */
+  }
+  main {
+    width: 100%;
+  }
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 90px 10px;
+    width: 100%;
+  }
+  #hero .text {
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #hero .text h1 {
+    text-align: start;
+    width: 355px;
+    font-size: 32px;
+  }
+  #hero .text p {
+    text-align: start;
+    width: 355px;
+    font-size: 16px;
+    line-height: 21.86px;
+  }
+  #hero .text button {
+    width: 166px;
+    height: 46px;
+    border-radius: 60px;
+    background-color: #3d00b7;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.86px;
+    letter-spacing: 6.5%;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 60px;
+  }
+  #hero .text .stats {
+    justify-content: center;
+  }
+  .stats {
+    display: flex;
+    gap: 45px;
+  }
+
+  .stats .stats-cont {
+    width: 78px;
+    height: 69px;
+  }
+
+  .stats h3 {
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+  }
+
+  .stats span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #565656;
+  }
+
+  #hero .img {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 365px;
+    height: 440px;
+  }
+  #hero .img .wrapped {
+    align-items: center;
+    justify-content: start;
+    background: none;
+  }
+  #hero .img .image-card .countdown {
+    margin: 8px;
+    width: 340px;
+    bottom: 16px;
+  }
+
+  #hero .img .box1 .cover {
+    width: 355px;
+  }
+
+  #features {
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  #features .content p {
+    font-weight: 400;
+    font-size: 32px;
+    width: 337px;
+  }
+
+  #features .content2 .div1,
+  .div2 {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #features .content2 .div1,
+  .div2 {
+    margin-left: 0px;
+  }
+
+  #features .content2 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 70px 0;
+  }
+
+  #collection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+    padding: 100px 10px;
+    width: 100%;
+    height: auto;
+    /* flex-flow: wrap;
+    gap: 40px; */
+  }
+
+  #collection .seg1 .card .thumbnail {
+    width: 355px;
+  }
+
+  #collection .seg1 .name img {
+    margin-right: 10px;
+    width: 47.3px;
+  }
+
+  #collection .seg1 .name .content span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #363639;
+  }
+
+  #collection .seg1 .profile .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* width: 91px; */
+  }
+
+  #collection .seg1 .profile .price p {
+    font-weight: 700;
+    font-size: 14px;
+    color: #3a3a3a;
+    line-height: 16.39px;
+    margin-bottom: 7px;
+  }
+  #collection .seg3 .nft-tracker {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #featured {
+    padding: 0 10px;
+  }
+  #featured .card3 {
+    width: 365px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  #featured .placard {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  #featured .placard .card1 .cover {
+    width: 355px;
+  }
+  #featured .banner {
+    display: flex;
+    align-items: flex-start;
+  }
+  #nft-trade {
+    width: 100%;
+    height: auto;
+    padding: 100px 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  #nft-trade .img-box .pfp img {
+    width: 64px;
+  }
+
+  #nft-trade .img-box {
+    position: relative;
+    /* height: 448px; */
+    /* width: 64px; */
+  }
+  #nft-trade .img-box .middlepng {
+    width: 355px;
+  }
+
+  #nft-trade .img-box .pfp {
+    display: flex;
+    position: absolute;
+    /* background: #000; */
+    bottom: -65px;
+    left: 0px;
+    width: 108px;
+    /* margin-bottom: 25px; */
+  }
+
+  #nft-trade .img-box .pfp .p1 {
+    margin-left: 50px;
+    /* background: #00AC4F; */
+    position: absolute;
+  }
+
+  #nft-trade .content {
+    align-items: flex-start;
+  }
+  #nft-trade .content h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54.64px;
+    letter-spacing: 0%;
+    width: 320px;
+    text-align: start;
+  }
+
+  #nft-trade .content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #636363;
+    width: 355px;
+    margin-bottom: 52px;
+  }
+
+  #nft-trade .content .sign-up {
+    width: 209px;
+    height: 67px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27.32px;
+    letter-spacing: 6.5%;
+    color: #fff;
+    background: #3d00b7;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  #discover {
+    padding: 0 10px;
+  }
+  #discover .mini__navbar .hamburger span {
+    display: none;
+  }
+  #discover .market {
+    width: 365px;
+    padding-right: 5px;
+  }
+  #discover .morenfts {
+    display: flex;
+    align-items: start;
+  }
+  footer {
+    padding: 60px 10px;
+    margin: 45px 0;
+  }
+
+  footer .footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  footer .footer-container .box1 h5 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32.78px;
+    margin-bottom: 23px;
+  }
+
+  footer .footer-container .box1 p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.4px;
+    width: 333px;
+    margin-bottom: 32px;
+    color: #565656;
+  }
+
+  footer .footer-container .box1 .socials a {
+    margin-right: 16px;
+  }
+
+  footer .footer-container .wrap {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 95px;
+  }
+  footer .footer-container .right {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  footer .footer-container .wrap .box2 h6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.59px;
+    margin-bottom: 22px;
+    width: 133px;
+  }
+
+  footer .footer-container .wrap .box3 {
+    margin-left: 0px;
+  }
+
+  footer .footer-container .wrap .box3 h6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.59px;
+    margin-bottom: 22px;
+    width: 133px;
+  }
+
+  footer .footer-container .box4 h6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.59px;
+    margin-bottom: 22px;
+  }
+
+  footer .footer-container .box4 p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #3d3d3d;
+    width: 362px;
+  }
+
+  footer .footer-container .box4 .subscribe {
+    height: 60.79px;
+    width: 364px;
+    border-radius: 45.6px;
+    border: 2px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  footer .footer-container .box4 .subscribe input {
+    height: 100%;
+    width: 144.38px;
+    margin-left: 25.84px;
+    font-weight: 400;
+    font-size: 12.16px;
+    line-height: 16.61px;
+    color: #959595;
+    outline: none;
+    border: none;
+  }
+
+  footer .footer-container .box4 .subscribe input::placeholder {
+    margin-left: 25.84px;
+    font-weight: 400;
+    font-size: 12.16px;
+    line-height: 16.61px;
+    color: #959595;
+    width: 144.38px;
+  }
+
+  footer .footer-container .box4 .subscribe .sub-btn {
+    width: 148.79px;
+    height: 47.4px;
+    background: #2639ed;
+    border: none;
+    border-radius: 45.59px;
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 12.16px;
+    line-height: 16.61px;
+    letter-spacing: 6.5%;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  footer .footer-container .wrap a {
+    font-weight: 500;
+    font-size: 14px;
+    /* line-height: 28px; */
+    color: #3d3d3d;
+    display: block;
+    margin-bottom: 14px;
+  }
+  #discover .market {
+    width: 365px;
+    /* overflow: hidden; */
+    overflow-x: scroll;
+  }
+}
